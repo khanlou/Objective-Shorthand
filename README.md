@@ -45,9 +45,9 @@ The OS X SDK has a weird API called [NSComparisonMethods](https://developer.appl
 	- (BOOL)isGreaterThan:(id)object;
 	- (BOOL)isNotEqualTo:(id)object;
 
-For some reason, this never made it over to iOS, even though it's tremendously useful. I like these methods because they're way more semantic than `[object compare:otherObject] == NSOrderedDescending` is way harder to understand than `[object isGreaterThan:otherObject]`. 
+For some reason, this never made it over to iOS, even though it's tremendously useful. I like these methods because they're way more semantic than the regular `compare:` method. `[object isGreaterThan:otherObject]` is way easier to understand than `[object compare:otherObject] == NSOrderedDescending`.
 
-If the object in question doesn't respond to `compare:` an exception will be thrown.
+If the object in question doesn't respond to `compare:`, an exception will be thrown.
 
 ### Array Uniquing
 
