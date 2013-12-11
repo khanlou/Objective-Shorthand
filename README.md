@@ -1,6 +1,6 @@
 # Objective-Shorthand
 
-Objective-Shorthand is a set of categories that make long things in Objective-C short. Additions are encouraged.
+Objective-Shorthand is a set of categories on Foundation objects that make long things in Objective-C short. Additions are encouraged.
 
 ## What can Objective-Shorthand help with?
 
@@ -81,6 +81,6 @@ And finally, some boolean operators:
 	- (BOOL) anyObjectsPassTest:(BOOL (^)(id object))test;
 	- (BOOL) noObjectsPassTest:(BOOL (^)(id object))test;
 
-## Tests
+## Additions
 
-Pull requests are welcome, however, there is a test suite. Please make sure that you are not breaking the tests, and if you add new methods, make sure there is test coverage for it.
+Pull requests are welcome, however, there is a test suite and AppleDoc-compliant documentation for each method. Please make sure that you are not breaking the tests, and if you add new methods, make sure there is test coverage for it and relevant document is included.

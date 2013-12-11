@@ -10,7 +10,22 @@
 
 @interface NSString (Regex)
 
+/**
+ *  Returns whether the string matches regular expression pattern.
+ *
+ *  @param regex The regular expression pattern to match against.
+ *
+ *  @return A BOOL describing whether the pattern matches the string it was called on.
+ */
 - (BOOL) matchesRegex:(NSString*)regex;
+
+/**
+ *  Returns the range of the first substring matching a regular expression pattern.
+ *
+ *  @param regex The regular expression pattern to match against.
+ *
+ *  @return The range of the first substring within the text matching the regex.
+ */
 - (NSRange) rangeOfFirstSubstringMatching:(NSString*)regex;
 
 @end
