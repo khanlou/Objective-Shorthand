@@ -24,7 +24,7 @@ A method to find the range of the first match for a given regex is also included
 
 Using `NSJSONSerialization`, you have convert your strings to `NSData` before deserializing them to arrays and dictionaries. Objective-Shorthand simplifies all that.
 
-It provides the same interface as `JSONKit`, but it works with the build Apple JSON serializer behind the scenes. The Ruby community is very good at writing libraries with consistent interfaces, and this is something we need to steal as writers of Objective-C. 
+It provides the same interface as `JSONKit`, but it works with the built-in Apple JSON serializer behind the scenes. The Ruby community is very good at writing libraries with consistent interfaces, and this is something we need to steal as writers of Objective-C. 
 
 To convert from a JSON string to an `NSArray` or `NSDictionary`:
 
