@@ -11,5 +11,6 @@
 @interface NSString (Regex)
 
 - (BOOL) matchesRegex:(NSString*)regex;
+- (NSRange) rangeOfFirstSubstringMatching:(NSString*)regex;
 
 @end

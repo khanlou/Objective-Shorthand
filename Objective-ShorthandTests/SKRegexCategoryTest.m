@@ -24,7 +24,7 @@
     XCTAssertTrue(doesMatch, @"the string test should be found");
 }
 
-- (void)testRegexWithOneCharacter
+- (void)testRegexWithOneWildCardCharacter
 {
     NSString *string = @"Here's a test string";
     
@@ -33,5 +33,14 @@
     XCTAssertTrue(doesMatch, @"the string test should be found");
 }
 
+- (void)testRangeOfFirstMatch
+{
+    NSString *string = @"Here's a test string";
+    
+    NSRange range = [string rangeOfFirstSubstringMatching:@"test"];
+    
+    XCTAssert(range.location != NSNotFound, @"the string test should be found");
+    XCTAssert(range.length == 4, @"the length of the match should be the length of the regex");
+}
 
 @end
