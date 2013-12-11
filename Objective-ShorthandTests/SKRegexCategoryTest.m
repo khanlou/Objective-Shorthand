@@ -43,4 +43,13 @@
     XCTAssert(range.length == 4, @"the length of the match should be the length of the regex");
 }
 
+- (void)testNonexistentMatch
+{
+    NSString *string = @"Here's a test string";
+    
+    BOOL doesMatch = [string matchesRegex:@"dafsdafa"];
+    
+    XCTAssertFalse(doesMatch, @"the string test should not be found");
+}
+
 @end
