@@ -49,7 +49,7 @@ For some reason, this never made it over to iOS, even though it's tremendously u
 
 If the object in question doesn't respond to `compare:`, an exception will be thrown.
 
-### Array Uniquing
+### NSArray Convenience Methods
 
 Pulling out the unique elements of an array involves the ever-goofy `[array valueForKeyPath:@"@distinctUnionOfObjects.self"]`. This is wrapped up inside of the following method:
 
@@ -64,7 +64,6 @@ There's also `-sortedArray` which uses the default `compare:` selector to compar
 And `-reversedArray`:
 
 	- (NSArray*) reversedArray;
-
 
 ### Functional Collection Operators
 
