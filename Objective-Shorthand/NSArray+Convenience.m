@@ -10,8 +10,21 @@
 
 @implementation NSArray (Convenience)
 
-- (NSArray*) arrayByUniquingObjects {
+- (NSArray*)arrayByUniquingObjects {
     return [self valueForKeyPath:@"@distinctUnionOfObjects.self"];
+}
+
+- (NSArray*)sortedArray {
+    return [self sortedArrayUsingSelector:@selector(compare:)];
+}
+
+- (NSArray*)reversedArray {
+    NSMutableArray *reversedArray = [NSMutableArray arrayWithCapacity:[self count]];
+    NSEnumerator *enumerator = [self reverseObjectEnumerator];
+    for (id element in enumerator) {
+        [reversedArray addObject:element];
+    }
+    return reversedArray;
 }
 
 @end

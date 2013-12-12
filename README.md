@@ -57,6 +57,15 @@ Pulling out the unique elements of an array involves the ever-goofy `[array valu
 
 You never have to remember how to type that string literal again! Autocomplete Rules Everything Around Me.
 
+There's also `-sortedArray` which uses the default `compare:` selector to compare objects:
+
+	- (NSArray*) sortedArray;
+
+And `-reversedArray`:
+
+	- (NSArray*) reversedArray;
+
+
 ### Functional Collection Operators
 
 Finally, Objective-Shorthand provides a category on `NSArray` that provides the normal functional collection operators, like `map`, `select`, and `any`, but with names that are both more semantic and more native to Objective-C.
