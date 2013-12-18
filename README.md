@@ -86,8 +86,8 @@ Finally, Objective-Shorthand provides a category on `NSArray` that provides the 
 
 The other operators can be found, including `select` (aka `filter`) and `reject`:
 
-	- (NSArray*) arrayBySelectingItemsPassingTest:(BOOL (^)(id object))test;
-	- (NSArray*) arrayByRejectingItemsPassingTest:(BOOL (^)(id object))test;
+	- (NSArray*) arrayBySelectingObjectsPassingTest:(BOOL (^)(id object))test;
+	- (NSArray*) arrayByRejectingObjectsPassingTest:(BOOL (^)(id object))test;
 
 `map` (aka `collect`) and `reduce` (aka `inject`) are available as well.
 
@@ -98,7 +98,6 @@ The other operators can be found, including `select` (aka `filter`) and `reject`
 
 	- (id) firstObjectPassingTest:(BOOL (^)(id object))test;
 	- (id) randomObject;
-
 
 And finally, some boolean operators:
 

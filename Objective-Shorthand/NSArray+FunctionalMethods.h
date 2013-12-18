@@ -17,7 +17,7 @@
  *
  *  @return A new array with only the objects passing the test.
  */
-- (NSArray*) arrayBySelectingItemsPassingTest:(BOOL (^)(id object))test;
+- (NSArray*) arrayBySelectingObjectsPassingTest:(BOOL (^)(id object))test;
 
 /**
  *  Returns a new array with the objects that return `YES` to the `test` block removed. This function corresponds to `reject` in other programming languages.
@@ -26,7 +26,7 @@
  *
  *  @return A new array with only the objects failing the test.
  */
-- (NSArray*) arrayByRejectingItemsPassingTest:(BOOL (^)(id object))test;
+- (NSArray*) arrayByRejectingObjectsPassingTest:(BOOL (^)(id object))test;
 
 
 /**

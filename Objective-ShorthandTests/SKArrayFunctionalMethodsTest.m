@@ -19,7 +19,7 @@
 - (void) testSelectMethod
 {
     NSArray *array = @[@1, @2, @3];
-    NSArray *newArray = [array arrayBySelectingItemsPassingTest:^BOOL(id object) { return [object isGreaterThanOrEqualTo:@2]; }];
+    NSArray *newArray = [array arrayBySelectingObjectsPassingTest:^BOOL(id object) { return [object isGreaterThanOrEqualTo:@2]; }];
     
     XCTAssert(newArray.count == 2, @"two objects should be greater than or equal to 2");
 }
@@ -27,7 +27,7 @@
 - (void) testRejectMethod
 {
     NSArray *array = @[@1, @2, @3];
-    NSArray *newArray = [array arrayByRejectingItemsPassingTest:^BOOL(id object) { return [object isGreaterThanOrEqualTo:@2]; }];
+    NSArray *newArray = [array arrayByRejectingObjectsPassingTest:^BOOL(id object) { return [object isGreaterThanOrEqualTo:@2]; }];
     
     XCTAssert(newArray.count == 1, @"one object should be less than 2");
 }
@@ -67,7 +67,7 @@
     NSArray *array = @[@1, @2, @3];
     NSNumber *sum = [array objectByReducingObjectsIntoAccumulator:@0 usingBlock:^id(id accumulator, id object) { return @([accumulator integerValue] + [object integerValue]); }];
     
-    XCTAssert([sum integerValue] == 6, @"the sum of all items should equal 6");
+    XCTAssert([sum integerValue] == 6, @"the sum of all Objects should equal 6");
 }
 
 - (void)testAnyMethod

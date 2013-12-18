@@ -10,7 +10,7 @@
 
 @implementation NSArray (FunctionalMethods)
 
-- (NSArray*) arrayBySelectingItemsPassingTest:(BOOL (^)(id object))test {
+- (NSArray*) arrayBySelectingObjectsPassingTest:(BOOL (^)(id object))test {
     NSParameterAssert(test != nil);
     
     NSIndexSet *indexesOfSelectedObjects = [self indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
@@ -19,8 +19,8 @@
     return [self objectsAtIndexes:indexesOfSelectedObjects];
 }
 
-- (NSArray*) arrayByRejectingItemsPassingTest:(BOOL (^)(id object))test {
-    return [self arrayBySelectingItemsPassingTest:^BOOL(id object) {
+- (NSArray*) arrayByRejectingObjectsPassingTest:(BOOL (^)(id))test {
+    return [self arrayBySelectingObjectsPassingTest:^BOOL(id object) {
         return !test(object);
     }];
 }
