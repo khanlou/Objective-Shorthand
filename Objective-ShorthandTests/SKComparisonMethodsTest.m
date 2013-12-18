@@ -67,7 +67,7 @@
 - (void) testDates {
     NSDate *now = [NSDate date];
     NSDate *aMinuteAgo = [now dateByAddingTimeInterval:-3600];
-    XCTAssertTrue([now isGreaterThan:aMinuteAgo], @"Now should be greater than a minute ago");
+    XCTAssertTrue([now isGreaterThan:aMinuteAgo], @"Now should be greater than an hour ago");
 }
 
 - (void) testStrings {
