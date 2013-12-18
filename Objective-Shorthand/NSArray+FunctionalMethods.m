@@ -10,7 +10,6 @@
 
 @implementation NSArray (FunctionalMethods)
 
-
 - (NSArray*) arrayBySelectingItemsPassingTest:(BOOL (^)(id object))test {
     NSParameterAssert(test != nil);
     
