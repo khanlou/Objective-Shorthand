@@ -18,7 +18,7 @@
 
 - (void)testUniquing
 {
-    NSArray *uniquedArray = [@[@1, @2, @2, @3] arrayByUniquingObjects];
+    NSArray *uniquedArray = [@[@1, @2, @2, @3] uniquedArray];
     
     XCTAssert(uniquedArray.count == 3, @"The uniqued array should only have 3 elements in it");
 }

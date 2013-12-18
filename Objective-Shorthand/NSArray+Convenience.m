@@ -10,7 +10,7 @@
 
 @implementation NSArray (Convenience)
 
-- (NSArray*)arrayByUniquingObjects {
+- (NSArray*)uniquedArray {
     return [self valueForKeyPath:@"@distinctUnionOfObjects.self"];
 }
 

@@ -19,7 +19,7 @@
  *
  *  @return A new array with duplicate objects removed.
  */
-- (NSArray*)arrayByUniquingObjects;
+- (NSArray*)uniquedArray;
 
 /**
  *  Returns an array that lists the receiving array’s elements in ascending order, as determined by the `compare:` method. All objects must respond to the `compare:` method, or an exception will be thrown.
