@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		1A36FE111858042200EE587A /* SKJSONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A36FE101858042200EE587A /* SKJSONTests.m */; };
 		1A36FE141858090B00EE587A /* NSArray+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A36FE131858090B00EE587A /* NSArray+Convenience.m */; };
-		1A36FE1618580A1500EE587A /* SKArrayConvenienceMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A36FE1518580A1500EE587A /* SKArrayConvenienceMethods.m */; };
+		1A36FE1618580A1500EE587A /* SKArrayConvenienceMethodsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A36FE1518580A1500EE587A /* SKArrayConvenienceMethodsTest.m */; };
 		1A36FE1918580C2300EE587A /* NSArray+FunctionalMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A36FE1818580C2300EE587A /* NSArray+FunctionalMethods.m */; };
-		1A36FE1B1858119D00EE587A /* SKFunctionalMethodsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A36FE1A1858119D00EE587A /* SKFunctionalMethodsTest.m */; };
+		1A36FE1B1858119D00EE587A /* SKArrayFunctionalMethodsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A36FE1A1858119D00EE587A /* SKArrayFunctionalMethodsTest.m */; };
 		1AB033631861420C009E215E /* NSString+DataDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB033621861420C009E215E /* NSString+DataDetector.m */; };
 		1AB0336518614314009E215E /* SKDataDetectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0336418614314009E215E /* SKDataDetectorTest.m */; };
+		1AB033681861486D009E215E /* NSSet+FunctionalMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB033671861486D009E215E /* NSSet+FunctionalMethods.m */; };
+		1AB0336B1861487A009E215E /* NSDictionary+FunctionalMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0336A1861487A009E215E /* NSDictionary+FunctionalMethods.m */; };
+		1AB0336D18614FCB009E215E /* SKDictionaryFunctionalMethodsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0336C18614FCB009E215E /* SKDictionaryFunctionalMethodsTest.m */; };
+		1AB0336F18614FD7009E215E /* SKSetFunctionalMethodsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0336E18614FD7009E215E /* SKSetFunctionalMethodsTest.m */; };
 		1ABD0CDD1857FC510077A64E /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD0CDC1857FC510077A64E /* NSObject+JSON.m */; };
 		1ABD0CE01857FEEE0077A64E /* NSObject+ComparisonMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD0CDF1857FEEE0077A64E /* NSObject+ComparisonMethods.m */; };
 		1ABD0D221858005B0077A64E /* SKComparisonMethodsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD0D211858005B0077A64E /* SKComparisonMethodsTest.m */; };
@@ -48,13 +52,19 @@
 		1A36FE101858042200EE587A /* SKJSONTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKJSONTests.m; sourceTree = "<group>"; };
 		1A36FE121858090B00EE587A /* NSArray+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Convenience.h"; sourceTree = "<group>"; };
 		1A36FE131858090B00EE587A /* NSArray+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Convenience.m"; sourceTree = "<group>"; };
-		1A36FE1518580A1500EE587A /* SKArrayConvenienceMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKArrayConvenienceMethods.m; sourceTree = "<group>"; };
+		1A36FE1518580A1500EE587A /* SKArrayConvenienceMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKArrayConvenienceMethodsTest.m; sourceTree = "<group>"; };
 		1A36FE1718580C2300EE587A /* NSArray+FunctionalMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FunctionalMethods.h"; sourceTree = "<group>"; };
 		1A36FE1818580C2300EE587A /* NSArray+FunctionalMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FunctionalMethods.m"; sourceTree = "<group>"; };
-		1A36FE1A1858119D00EE587A /* SKFunctionalMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFunctionalMethodsTest.m; sourceTree = "<group>"; };
+		1A36FE1A1858119D00EE587A /* SKArrayFunctionalMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKArrayFunctionalMethodsTest.m; sourceTree = "<group>"; };
 		1AB033611861420C009E215E /* NSString+DataDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DataDetector.h"; sourceTree = "<group>"; };
 		1AB033621861420C009E215E /* NSString+DataDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DataDetector.m"; sourceTree = "<group>"; };
 		1AB0336418614314009E215E /* SKDataDetectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDataDetectorTest.m; sourceTree = "<group>"; };
+		1AB033661861486D009E215E /* NSSet+FunctionalMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+FunctionalMethods.h"; sourceTree = "<group>"; };
+		1AB033671861486D009E215E /* NSSet+FunctionalMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+FunctionalMethods.m"; sourceTree = "<group>"; };
+		1AB033691861487A009E215E /* NSDictionary+FunctionalMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FunctionalMethods.h"; sourceTree = "<group>"; };
+		1AB0336A1861487A009E215E /* NSDictionary+FunctionalMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FunctionalMethods.m"; sourceTree = "<group>"; };
+		1AB0336C18614FCB009E215E /* SKDictionaryFunctionalMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDictionaryFunctionalMethodsTest.m; sourceTree = "<group>"; };
+		1AB0336E18614FD7009E215E /* SKSetFunctionalMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSetFunctionalMethodsTest.m; sourceTree = "<group>"; };
 		1ABD0CDB1857FC510077A64E /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		1ABD0CDC1857FC510077A64E /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		1ABD0CDE1857FEEE0077A64E /* NSObject+ComparisonMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ComparisonMethods.h"; sourceTree = "<group>"; };
@@ -170,8 +180,10 @@
 				1ABF6B621857FB0B00F4BE77 /* SKRegexCategoryTest.m */,
 				1A36FE101858042200EE587A /* SKJSONTests.m */,
 				1ABD0D211858005B0077A64E /* SKComparisonMethodsTest.m */,
-				1A36FE1518580A1500EE587A /* SKArrayConvenienceMethods.m */,
-				1A36FE1A1858119D00EE587A /* SKFunctionalMethodsTest.m */,
+				1A36FE1518580A1500EE587A /* SKArrayConvenienceMethodsTest.m */,
+				1A36FE1A1858119D00EE587A /* SKArrayFunctionalMethodsTest.m */,
+				1AB0336C18614FCB009E215E /* SKDictionaryFunctionalMethodsTest.m */,
+				1AB0336E18614FD7009E215E /* SKSetFunctionalMethodsTest.m */,
 				1AB0336418614314009E215E /* SKDataDetectorTest.m */,
 			);
 			path = "Objective-ShorthandTests";
@@ -199,6 +211,10 @@
 				1A36FE131858090B00EE587A /* NSArray+Convenience.m */,
 				1A36FE1718580C2300EE587A /* NSArray+FunctionalMethods.h */,
 				1A36FE1818580C2300EE587A /* NSArray+FunctionalMethods.m */,
+				1AB033661861486D009E215E /* NSSet+FunctionalMethods.h */,
+				1AB033671861486D009E215E /* NSSet+FunctionalMethods.m */,
+				1AB033691861487A009E215E /* NSDictionary+FunctionalMethods.h */,
+				1AB0336A1861487A009E215E /* NSDictionary+FunctionalMethods.m */,
 				1AB033611861420C009E215E /* NSString+DataDetector.h */,
 				1AB033621861420C009E215E /* NSString+DataDetector.m */,
 			);
@@ -308,7 +324,9 @@
 				1ABF6B3A1857F9FF00F4BE77 /* SKAppDelegate.m in Sources */,
 				1AB033631861420C009E215E /* NSString+DataDetector.m in Sources */,
 				1ABF6B611857FA7B00F4BE77 /* NSString+Regex.m in Sources */,
+				1AB033681861486D009E215E /* NSSet+FunctionalMethods.m in Sources */,
 				1ABD0CE01857FEEE0077A64E /* NSObject+ComparisonMethods.m in Sources */,
+				1AB0336B1861487A009E215E /* NSDictionary+FunctionalMethods.m in Sources */,
 				1ABF6B401857F9FF00F4BE77 /* SKViewController.m in Sources */,
 				1ABF6B361857F9FF00F4BE77 /* main.m in Sources */,
 				1A36FE141858090B00EE587A /* NSArray+Convenience.m in Sources */,
@@ -319,11 +337,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A36FE1B1858119D00EE587A /* SKFunctionalMethodsTest.m in Sources */,
+				1AB0336F18614FD7009E215E /* SKSetFunctionalMethodsTest.m in Sources */,
+				1A36FE1B1858119D00EE587A /* SKArrayFunctionalMethodsTest.m in Sources */,
 				1AB0336518614314009E215E /* SKDataDetectorTest.m in Sources */,
-				1A36FE1618580A1500EE587A /* SKArrayConvenienceMethods.m in Sources */,
+				1A36FE1618580A1500EE587A /* SKArrayConvenienceMethodsTest.m in Sources */,
 				1ABF6B631857FB0B00F4BE77 /* SKRegexCategoryTest.m in Sources */,
 				1A36FE111858042200EE587A /* SKJSONTests.m in Sources */,
+				1AB0336D18614FCB009E215E /* SKDictionaryFunctionalMethodsTest.m in Sources */,
 				1ABD0D221858005B0077A64E /* SKComparisonMethodsTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

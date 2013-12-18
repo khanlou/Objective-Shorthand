@@ -105,6 +105,8 @@ And finally, some boolean operators:
 	- (BOOL) anyObjectsPassTest:(BOOL (^)(id object))test;
 	- (BOOL) noObjectsPassTest:(BOOL (^)(id object))test;
 
+All of the above methods are also included for `NSSet` and `NSDictionary`.
+
 ## Additions
 
 Pull requests are welcome, however, there is a test suite and AppleDoc-compliant documentation for each method. Please make sure that you are not breaking the tests, and if you add new methods, make sure there is test coverage for it and relevant documention is included.
