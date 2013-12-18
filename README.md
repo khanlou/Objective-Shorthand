@@ -64,7 +64,7 @@ If the object in question doesn't respond to `compare:`, an exception will be th
 
 Pulling out the unique elements of an array involves the ever-goofy `[array valueForKeyPath:@"@distinctUnionOfObjects.self"]`. This is wrapped up inside of the following method:
 
-	- (NSArray*) arrayByUniquingObjects;
+	- (NSArray*) uniquedArray;
 
 You never have to remember how to type that string literal again! Autocomplete Rules Everything Around Me.
 
