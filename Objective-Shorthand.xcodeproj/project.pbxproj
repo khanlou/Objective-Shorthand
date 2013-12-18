@@ -12,6 +12,8 @@
 		1A36FE1618580A1500EE587A /* SKArrayConvenienceMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A36FE1518580A1500EE587A /* SKArrayConvenienceMethods.m */; };
 		1A36FE1918580C2300EE587A /* NSArray+FunctionalMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A36FE1818580C2300EE587A /* NSArray+FunctionalMethods.m */; };
 		1A36FE1B1858119D00EE587A /* SKFunctionalMethodsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A36FE1A1858119D00EE587A /* SKFunctionalMethodsTest.m */; };
+		1AB033631861420C009E215E /* NSString+DataDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB033621861420C009E215E /* NSString+DataDetector.m */; };
+		1AB0336518614314009E215E /* SKDataDetectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0336418614314009E215E /* SKDataDetectorTest.m */; };
 		1ABD0CDD1857FC510077A64E /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD0CDC1857FC510077A64E /* NSObject+JSON.m */; };
 		1ABD0CE01857FEEE0077A64E /* NSObject+ComparisonMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD0CDF1857FEEE0077A64E /* NSObject+ComparisonMethods.m */; };
 		1ABD0D221858005B0077A64E /* SKComparisonMethodsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD0D211858005B0077A64E /* SKComparisonMethodsTest.m */; };
@@ -50,6 +52,9 @@
 		1A36FE1718580C2300EE587A /* NSArray+FunctionalMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FunctionalMethods.h"; sourceTree = "<group>"; };
 		1A36FE1818580C2300EE587A /* NSArray+FunctionalMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FunctionalMethods.m"; sourceTree = "<group>"; };
 		1A36FE1A1858119D00EE587A /* SKFunctionalMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFunctionalMethodsTest.m; sourceTree = "<group>"; };
+		1AB033611861420C009E215E /* NSString+DataDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DataDetector.h"; sourceTree = "<group>"; };
+		1AB033621861420C009E215E /* NSString+DataDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DataDetector.m"; sourceTree = "<group>"; };
+		1AB0336418614314009E215E /* SKDataDetectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDataDetectorTest.m; sourceTree = "<group>"; };
 		1ABD0CDB1857FC510077A64E /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		1ABD0CDC1857FC510077A64E /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		1ABD0CDE1857FEEE0077A64E /* NSObject+ComparisonMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ComparisonMethods.h"; sourceTree = "<group>"; };
@@ -167,6 +172,7 @@
 				1ABD0D211858005B0077A64E /* SKComparisonMethodsTest.m */,
 				1A36FE1518580A1500EE587A /* SKArrayConvenienceMethods.m */,
 				1A36FE1A1858119D00EE587A /* SKFunctionalMethodsTest.m */,
+				1AB0336418614314009E215E /* SKDataDetectorTest.m */,
 			);
 			path = "Objective-ShorthandTests";
 			sourceTree = "<group>";
@@ -193,6 +199,8 @@
 				1A36FE131858090B00EE587A /* NSArray+Convenience.m */,
 				1A36FE1718580C2300EE587A /* NSArray+FunctionalMethods.h */,
 				1A36FE1818580C2300EE587A /* NSArray+FunctionalMethods.m */,
+				1AB033611861420C009E215E /* NSString+DataDetector.h */,
+				1AB033621861420C009E215E /* NSString+DataDetector.m */,
 			);
 			name = "Objective-Shorthand";
 			sourceTree = "<group>";
@@ -298,6 +306,7 @@
 				1A36FE1918580C2300EE587A /* NSArray+FunctionalMethods.m in Sources */,
 				1ABD0CDD1857FC510077A64E /* NSObject+JSON.m in Sources */,
 				1ABF6B3A1857F9FF00F4BE77 /* SKAppDelegate.m in Sources */,
+				1AB033631861420C009E215E /* NSString+DataDetector.m in Sources */,
 				1ABF6B611857FA7B00F4BE77 /* NSString+Regex.m in Sources */,
 				1ABD0CE01857FEEE0077A64E /* NSObject+ComparisonMethods.m in Sources */,
 				1ABF6B401857F9FF00F4BE77 /* SKViewController.m in Sources */,
@@ -311,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A36FE1B1858119D00EE587A /* SKFunctionalMethodsTest.m in Sources */,
+				1AB0336518614314009E215E /* SKDataDetectorTest.m in Sources */,
 				1A36FE1618580A1500EE587A /* SKArrayConvenienceMethods.m in Sources */,
 				1ABF6B631857FB0B00F4BE77 /* SKRegexCategoryTest.m in Sources */,
 				1A36FE111858042200EE587A /* SKJSONTests.m in Sources */,

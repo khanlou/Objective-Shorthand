@@ -49,6 +49,17 @@ For some reason, this never made it over to iOS, even though it's tremendously u
 
 If the object in question doesn't respond to `compare:`, an exception will be thrown.
 
+### Data Detection Convenience Methods
+
+`NSDataDetector` can be a handful sometimes. Objective-Shorthand simplifies complex `NSDataDetector` objects to one line of code on NSString:
+
+	- (BOOL) isEmail;
+	- (BOOL) isURL;
+	- (BOOL) isPhoneNumber;
+	- (BOOL) isDate;
+	- (BOOL) isAddress;
+
+
 ### NSArray Convenience Methods
 
 Pulling out the unique elements of an array involves the ever-goofy `[array valueForKeyPath:@"@distinctUnionOfObjects.self"]`. This is wrapped up inside of the following method:
@@ -97,4 +108,4 @@ And finally, some boolean operators:
 
 ## Additions
 
-Pull requests are welcome, however, there is a test suite and AppleDoc-compliant documentation for each method. Please make sure that you are not breaking the tests, and if you add new methods, make sure there is test coverage for it and relevant document is included.
+Pull requests are welcome, however, there is a test suite and AppleDoc-compliant documentation for each method. Please make sure that you are not breaking the tests, and if you add new methods, make sure there is test coverage for it and relevant documention is included.
