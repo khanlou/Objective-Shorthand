@@ -2,6 +2,10 @@
 
 Objective-Shorthand is a set of categories on Foundation objects that make long things in Objective-C short. Additions are encouraged.
 
+Use Cocoapods to get Objective-Shorthand:
+
+	pod 'Objective-Shorthand', '~> 1.0'
+
 ## What can Objective-Shorthand help with?
 
 ### Regular Expressions
@@ -110,3 +114,5 @@ All of the above methods are also included for `NSSet` and `NSDictionary`.
 ## Additions
 
 Pull requests are welcome, however, there is a test suite and AppleDoc-compliant documentation for each method. Please make sure that you are not breaking the tests, and if you add new methods, make sure there is test coverage for it and relevant documention is included.
+
+If you have questions, comments, or suggestions, please get in touch. You can find me on Twitter at [@khanlou](http://twitter.com/khanlou) and email at <soroush@khanlou.com>.
