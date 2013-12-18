@@ -44,6 +44,24 @@
     }];
 }
 
+- (void) testMatchMethod {
+    NSArray *array = @[@1, @2, @3];
+    
+    id object = [array firstObjectPassingTest:^BOOL(id object) {
+        return [object isGreaterThanOrEqualTo:@2];
+    }];
+    
+    XCTAssert([object isEqual:@2], @"the first object greater than or equal to 2 should be 2");
+}
+
+- (void) testSampleMethod {
+    NSArray *array = @[@1, @2, @3];
+    
+    id randomObject = [array randomObject];
+    
+    XCTAssert([array containsObject:randomObject], @"random object must be contained within the array");
+}
+
 - (void) testReduceMethod
 {
     NSArray *array = @[@1, @2, @3];

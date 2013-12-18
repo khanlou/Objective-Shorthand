@@ -40,6 +40,31 @@
     return result;
 }
 
+- (id) firstObjectPassingTest:(BOOL (^)(id object))test {
+    NSParameterAssert(test != nil);
+    
+    __block NSUInteger indexOfFirstObjectPassingTest = NSNotFound;
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if (test(obj)) {
+            indexOfFirstObjectPassingTest = idx;
+            *stop = YES;
+        }
+    }];
+    
+    if (indexOfFirstObjectPassingTest == NSNotFound) {
+        return nil;
+    }
+    return self[indexOfFirstObjectPassingTest];
+}
+
+- (id) randomObject {
+    if (self.count == 0) {
+        return nil;
+    }
+    NSUInteger randomIndex = arc4random_uniform(self.count);
+    return self[randomIndex];
+}
+
 - (id) objectByReducingObjectsIntoAccumulator:(id)accumulator usingBlock:(id (^)(id accumulator, id object))block {
     NSParameterAssert(block != nil);
     

@@ -83,6 +83,12 @@ The other operators can be found, including `select` (aka `filter`) and `reject`
 	- (NSArray*) arrayByTransformingObjectsUsingBlock:(id (^)(id object))block;
 	- (id) objectByReducingObjectsIntoAccumulator:(id)accumulator usingBlock:(id (^)(id accumulator, id object))block;
 
+`sample` and `match` are available.
+
+	- (id) firstObjectPassingTest:(BOOL (^)(id object))test;
+	- (id) randomObject;
+
+
 And finally, some boolean operators:
 
 	- (BOOL) allObjectsPassTest:(BOOL (^)(id object))test;
