@@ -43,18 +43,15 @@
 - (id) firstObjectPassingTest:(BOOL (^)(id object))test {
     NSParameterAssert(test != nil);
     
-    __block NSUInteger indexOfFirstObjectPassingTest = NSNotFound;
+    __block id firstObjectPassingTest = nil;
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         if (test(obj)) {
-            indexOfFirstObjectPassingTest = idx;
+            firstObjectPassingTest = obj;
             *stop = YES;
         }
     }];
     
-    if (indexOfFirstObjectPassingTest == NSNotFound) {
-        return nil;
-    }
-    return self[indexOfFirstObjectPassingTest];
+    return firstObjectPassingTest;
 }
 
 - (id) randomObject {
