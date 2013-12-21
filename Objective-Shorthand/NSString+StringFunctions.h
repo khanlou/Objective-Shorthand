@@ -27,7 +27,7 @@
  *
  *  @return A boolean value telling whether two strings are the same when ignoring case.
  */
--(BOOL)isEqualToStringIgnoreCase:(NSString *)otherString;
+-(BOOL)isEqualToStringIgnoringCase:(NSString *)otherString;
 
 /**
  *  Returns a string in which all occurrences of another string have been removed.

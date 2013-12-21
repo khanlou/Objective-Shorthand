@@ -26,13 +26,13 @@
     XCTAssertFalse(doesNotContain, @"The string Hamburger does not contain burgers");
 }
 
--(void)testIsEqualToStringIgnoreCase
+-(void)testIsEqualToStringIgnoringCase
 {
-    BOOL isEqual = [@"HeLlO" isEqualToStringIgnoreCase:@"hello"];
+    BOOL isEqual = [@"HeLlO" isEqualToStringIgnoringCase:@"hello"];
     
     XCTAssertTrue(isEqual, @"These two strings contain the same characters of different cases so they are equal");
     
-    BOOL isNotEqual = [@"HeLlO" isEqualToStringIgnoreCase:@"hello "];
+    BOOL isNotEqual = [@"HeLlO" isEqualToStringIgnoringCase:@"hello "];
     
     XCTAssertFalse(isNotEqual, @"These strings are not equal because the second string ends with a space");
 }

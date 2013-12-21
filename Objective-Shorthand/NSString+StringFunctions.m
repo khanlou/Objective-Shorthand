@@ -13,21 +13,14 @@
 -(BOOL)contains:(NSString *)testString
 {
     if ([self rangeOfString:testString].location == NSNotFound)
-        return FALSE;
+        return NO;
     else
-        return TRUE;
+        return YES;
 }
 
--(BOOL)isEqualToStringIgnoreCase:(NSString *)otherString
+-(BOOL)isEqualToStringIgnoringCase:(NSString *)otherString
 {
-    //Converts both strings to upper case, then compares them
-    NSString *s1 = [self uppercaseString];
-    NSString *s2 = [otherString uppercaseString];
-    
-    if ([s1 isEqualToString:s2])
-        return TRUE;
-    else
-        return FALSE;
+    return [self caseInsensitiveCompare:otherString] == NSOrderedSame;
 }
 
 -(NSString *)stringByRemovingOccurrencesOfString:(NSString *)removeString
