@@ -18,7 +18,7 @@
  *
  *  @return A boolean value telling whether the receiver contains the test string.
  */
--(BOOL)contains:(NSString *)testString;
+- (BOOL)contains:(NSString *)testString;
 
 /**
  *  Returns whether two strings are equal when ignoring case
@@ -27,7 +27,7 @@
  *
  *  @return A boolean value telling whether two strings are the same when ignoring case.
  */
--(BOOL)isEqualToStringIgnoringCase:(NSString *)otherString;
+- (BOOL)isEqualToStringIgnoringCase:(NSString *)otherString;
 
 /**
  *  Returns a string in which all occurrences of another string have been removed.
@@ -36,6 +36,6 @@
  *
  *  @return The string that has had all occurrences of another string removed.
  */
--(NSString *)stringByRemovingOccurrencesOfString:(NSString *)removeString;
+- (NSString *)stringByRemovingOccurrencesOfString:(NSString *)removeString;
 
 @end

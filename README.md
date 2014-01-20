@@ -63,7 +63,6 @@ If the object in question doesn't respond to `compare:`, an exception will be th
 	- (BOOL) isDate;
 	- (BOOL) isAddress;
 
-
 ### NSArray Convenience Methods
 
 Pulling out the unique elements of an array involves the ever-goofy `[array valueForKeyPath:@"@distinctUnionOfObjects.self"]`. This is wrapped up inside of the following method:
@@ -76,9 +75,7 @@ There's also `-sortedArray` which uses the default `compare:` selector to compar
 
 	- (NSArray*) sortedArray;
 
-And `-reversedArray`:
-
-	- (NSArray*) reversedArray;
+Objective-Shorthand also includes `-reversedArray` and `-flattenedArray`.
 
 ### Functional Collection Operators
 
@@ -110,6 +107,14 @@ And finally, some boolean operators:
 	- (BOOL) noObjectsPassTest:(BOOL (^)(id object))test;
 
 All of the above methods are also included for `NSSet` and `NSDictionary`.
+
+## String Methods
+
+Thanks to @bgottlob, Objective-Shorthand has some string functions as well.
+
+    - (BOOL)contains:(NSString *)testString
+    - (BOOL)isEqualToStringIgnoringCase:(NSString *)otherString
+    - (NSString *)stringByRemovingOccurrencesOfString:(NSString *)removeString
 
 ## Additions
 

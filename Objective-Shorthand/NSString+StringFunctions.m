@@ -10,7 +10,7 @@
 
 @implementation NSString (StringFunctions)
 
--(BOOL)contains:(NSString *)testString
+- (BOOL)contains:(NSString *)testString
 {
     if ([self rangeOfString:testString].location == NSNotFound)
         return NO;
@@ -18,12 +18,12 @@
         return YES;
 }
 
--(BOOL)isEqualToStringIgnoringCase:(NSString *)otherString
+- (BOOL)isEqualToStringIgnoringCase:(NSString *)otherString
 {
     return [self caseInsensitiveCompare:otherString] == NSOrderedSame;
 }
 
--(NSString *)stringByRemovingOccurrencesOfString:(NSString *)removeString
+- (NSString *)stringByRemovingOccurrencesOfString:(NSString *)removeString
 {
     return [self stringByReplacingOccurrencesOfString:removeString withString:@""];
 }
