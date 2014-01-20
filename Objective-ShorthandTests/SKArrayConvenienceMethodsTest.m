@@ -9,12 +9,33 @@
 #import <XCTest/XCTest.h>
 #import "NSArray+Convenience.h"
 #import "NSObject+ComparisonMethods.h"
+#import "NSArray+FunctionalMethods.h"
 
 @interface SKArrayConvenienceMethods : XCTestCase
 
 @end
 
 @implementation SKArrayConvenienceMethods
+
+- (void)testFlattening {
+    NSArray *originalArray = @[
+                               @1,
+                               @[@2, @2],
+                               @[@3,
+                                 @[@4, @5],
+                                 ],
+                               @3,
+                               ];
+    
+    NSArray *flattenedArray = [originalArray flattenedArray];
+    
+    XCTAssert(flattenedArray.count == 7, @"Flattening an array should have all the elements of all subarrays");
+    
+    BOOL noObjectsAreArrays = [flattenedArray noObjectsPassTest:^BOOL(id object) {
+        return [object isKindOfClass:[NSArray class]];
+    }];
+    XCTAssert(noObjectsAreArrays, @"A flattened array should not have any objects that are arrays.");
+}
 
 - (void)testUniquing
 {

@@ -10,6 +10,20 @@
 
 @implementation NSArray (Convenience)
 
+- (NSArray*)flattenedArray {
+    NSMutableArray *array = [NSMutableArray array];
+    
+    for (id object in self) {
+        if ([object isKindOfClass:NSArray.class]) {
+            [array addObjectsFromArray:[object flattenedArray]];
+        } else {
+            [array addObject:object];
+        }
+    }
+    
+    return array;
+}
+
 - (NSArray*)uniquedArray {
     return [self valueForKeyPath:@"@distinctUnionOfObjects.self"];
 }

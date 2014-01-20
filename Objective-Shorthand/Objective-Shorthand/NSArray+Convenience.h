@@ -39,4 +39,13 @@
  */
 - (NSArray*) reversedArray;
 
+/**
+ *  Returns an array containing all the objects of subarrays in the same order.
+ *
+ *  The new array contains references to the receiving array’s elements, not copies of them.
+ *
+ *  @return A new array with subarray objects brought up to the top level.
+ */
+- (NSArray*) flattenedArray;
+
 @end
