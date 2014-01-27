@@ -33,12 +33,7 @@
 }
 
 - (NSArray*)reversedArray {
-    NSMutableArray *reversedArray = [NSMutableArray arrayWithCapacity:[self count]];
-    NSEnumerator *enumerator = [self reverseObjectEnumerator];
-    for (id element in enumerator) {
-        [reversedArray addObject:element];
-    }
-    return reversedArray;
+    return [[self reverseObjectEnumerator] allObjects];
 }
 
 @end
