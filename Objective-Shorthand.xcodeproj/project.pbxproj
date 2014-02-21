@@ -54,6 +54,7 @@
 		1A36FE101858042200EE587A /* SKJSONTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKJSONTests.m; sourceTree = "<group>"; };
 		1A36FE1518580A1500EE587A /* SKArrayConvenienceMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKArrayConvenienceMethodsTest.m; sourceTree = "<group>"; };
 		1A36FE1A1858119D00EE587A /* SKArrayFunctionalMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKArrayFunctionalMethodsTest.m; sourceTree = "<group>"; };
+		1A6B09F818B6FB510001425F /* Objective-Shorthand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-Shorthand.h"; sourceTree = "<group>"; };
 		1AB0336418614314009E215E /* SKDataDetectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDataDetectorTest.m; sourceTree = "<group>"; };
 		1AB0336C18614FCB009E215E /* SKDictionaryFunctionalMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDictionaryFunctionalMethodsTest.m; sourceTree = "<group>"; };
 		1AB0336E18614FD7009E215E /* SKSetFunctionalMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSetFunctionalMethodsTest.m; sourceTree = "<group>"; };
@@ -207,18 +208,19 @@
 		1ABF6B5E1857FA2E00F4BE77 /* Objective-Shorthand */ = {
 			isa = PBXGroup;
 			children = (
+				1A6B09F818B6FB510001425F /* Objective-Shorthand.h */,
 				1AB03370186154E0009E215E /* NSArray+Convenience.h */,
 				1AB03371186154E0009E215E /* NSArray+Convenience.m */,
 				1AB03372186154E0009E215E /* NSArray+FunctionalMethods.h */,
 				1AB03373186154E0009E215E /* NSArray+FunctionalMethods.m */,
 				1AB03374186154E0009E215E /* NSDictionary+FunctionalMethods.h */,
 				1AB03375186154E0009E215E /* NSDictionary+FunctionalMethods.m */,
+				1AB0337A186154E0009E215E /* NSSet+FunctionalMethods.h */,
+				1AB0337B186154E0009E215E /* NSSet+FunctionalMethods.m */,
 				1AB03376186154E0009E215E /* NSObject+ComparisonMethods.h */,
 				1AB03377186154E0009E215E /* NSObject+ComparisonMethods.m */,
 				1AB03378186154E0009E215E /* NSObject+JSON.h */,
 				1AB03379186154E0009E215E /* NSObject+JSON.m */,
-				1AB0337A186154E0009E215E /* NSSet+FunctionalMethods.h */,
-				1AB0337B186154E0009E215E /* NSSet+FunctionalMethods.m */,
 				1AB0337C186154E0009E215E /* NSString+DataDetector.h */,
 				1AB0337D186154E0009E215E /* NSString+DataDetector.m */,
 				1AB0337E186154E0009E215E /* NSString+Regex.h */,
