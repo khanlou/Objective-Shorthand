@@ -16,3 +16,4 @@
 #import "NSString+DataDetector.h"
 #import "NSString+Regex.h"
 #import "NSString+StringFunctions.h"
+#import "NSString+DataConversion.h"

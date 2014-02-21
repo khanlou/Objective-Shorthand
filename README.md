@@ -115,6 +115,12 @@ Thanks to @bgottlob, Objective-Shorthand has some string functions as well.
     - (BOOL)contains:(NSString *)testString
     - (BOOL)isEqualToStringIgnoringCase:(NSString *)otherString
     - (NSString *)stringByRemovingOccurrencesOfString:(NSString *)removeString
+    
+## Data Conversion
+
+Every single time I need to convert `NSString`s to `NSData`, I have to check Stack Overflow. Never again!
+
+`NSString` now has `-dataRepresentation`, and `NSData` now has `-stringRepresentation`.
 
 ## Additions
 
