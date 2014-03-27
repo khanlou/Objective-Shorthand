@@ -56,9 +56,9 @@
 		1A36FE101858042200EE587A /* SKJSONTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKJSONTests.m; sourceTree = "<group>"; };
 		1A36FE1518580A1500EE587A /* SKArrayConvenienceMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKArrayConvenienceMethodsTest.m; sourceTree = "<group>"; };
 		1A36FE1A1858119D00EE587A /* SKArrayFunctionalMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKArrayFunctionalMethodsTest.m; sourceTree = "<group>"; };
-		1A6B09F818B6FB510001425F /* Objective-Shorthand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-Shorthand.h"; sourceTree = "<group>"; };
-		1A6B09F918B6FE780001425F /* NSString+DataConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DataConversion.h"; sourceTree = "<group>"; };
-		1A6B09FA18B6FE780001425F /* NSString+DataConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DataConversion.m"; sourceTree = "<group>"; };
+		1A6B09F818B6FB510001425F /* Objective-Shorthand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Objective-Shorthand.h"; path = "Objective-Shorthand/Objective-Shorthand.h"; sourceTree = "<group>"; };
+		1A6B09F918B6FE780001425F /* NSString+DataConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+DataConversion.h"; path = "Objective-Shorthand/NSString+DataConversion.h"; sourceTree = "<group>"; };
+		1A6B09FA18B6FE780001425F /* NSString+DataConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+DataConversion.m"; path = "Objective-Shorthand/NSString+DataConversion.m"; sourceTree = "<group>"; };
 		1A6B09FC18B6FF4F0001425F /* SKDataConversionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDataConversionTest.m; sourceTree = "<group>"; };
 		1AB0336418614314009E215E /* SKDataDetectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDataDetectorTest.m; sourceTree = "<group>"; };
 		1AB0336C18614FCB009E215E /* SKDictionaryFunctionalMethodsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDictionaryFunctionalMethodsTest.m; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 		1ABF6B501857F9FF00F4BE77 /* Objective-ShorthandTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Objective-ShorthandTests-Info.plist"; sourceTree = "<group>"; };
 		1ABF6B521857F9FF00F4BE77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1ABF6B621857FB0B00F4BE77 /* SKRegexCategoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKRegexCategoryTest.m; sourceTree = "<group>"; };
-		DC2C3B41186603E200DC5DD6 /* NSString+StringFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringFunctions.h"; sourceTree = "<group>"; };
-		DC2C3B42186603E200DC5DD6 /* NSString+StringFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringFunctions.m"; sourceTree = "<group>"; };
+		DC2C3B41186603E200DC5DD6 /* NSString+DataConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+DataConversion.h"; path = "Objective-Shorthand/NSString+DataConversion.h"; sourceTree = "<group>"; };
+		DC2C3B42186603E200DC5DD6 /* NSString+StringFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+StringFunctions.m"; path = "Objective-Shorthand/NSString+StringFunctions.m"; sourceTree = "<group>"; };
 		DC2C3B4418660BBA00DC5DD6 /* SKStringFunctionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStringFunctionTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,7 +231,7 @@
 				1AB0337D186154E0009E215E /* NSString+DataDetector.m */,
 				1AB0337E186154E0009E215E /* NSString+Regex.h */,
 				1AB0337F186154E0009E215E /* NSString+Regex.m */,
-				DC2C3B41186603E200DC5DD6 /* NSString+StringFunctions.h */,
+				DC2C3B41186603E200DC5DD6 /* NSString+DataConversion.h */,
 				DC2C3B42186603E200DC5DD6 /* NSString+StringFunctions.m */,
 				1A6B09F918B6FE780001425F /* NSString+DataConversion.h */,
 				1A6B09FA18B6FE780001425F /* NSString+DataConversion.m */,
