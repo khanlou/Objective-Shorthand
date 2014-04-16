@@ -52,4 +52,13 @@
     XCTAssertFalse(doesMatch, @"the string test should not be found");
 }
 
+- (void)testMultipleMatches {
+    // Finds all of the matches for a hashtag
+    NSString *testString = @"@justin is gonna make this #work #srsly #sickofthisnotbeingathing";
+    
+    NSArray *matches = [testString matchesForRegex:@"#(\\w+)"];
+    
+    XCTAssert(matches.count == 3, @"Could not find the 3 provided hashtags");
+}
+
 @end

@@ -11,14 +11,17 @@
 @implementation NSString (Regex)
 
 - (BOOL) matchesRegex:(NSString*)regex {
-    NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:regex options:0 error:nil];
-    NSUInteger numberOfMatches = [regularExpression numberOfMatchesInString:self options:0 range:NSMakeRange(0, self.length)];
-    return numberOfMatches > 0;
+    return ([self matchesForRegex:regex].count > 0);
 }
 
 - (NSRange) rangeOfFirstSubstringMatching:(NSString*)regex {
     NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:regex options:0 error:nil];
     return [regularExpression rangeOfFirstMatchInString:self options:0 range:NSMakeRange(0, self.length)];
+}
+
+- (NSArray*) matchesForRegex:(NSString *)regex {
+    NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:regex options:0 error:nil];
+    return [regularExpression matchesInString:self options:0 range:NSMakeRange(0, self.length)];
 }
 
 @end
