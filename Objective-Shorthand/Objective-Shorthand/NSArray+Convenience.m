@@ -25,7 +25,7 @@
 }
 
 - (NSArray*)uniquedArray {
-    return [self valueForKeyPath:@"@distinctUnionOfObjects.self"];
+    return [[NSOrderedSet orderedSetWithArray:self] array];
 }
 
 - (NSArray*)sortedArray {

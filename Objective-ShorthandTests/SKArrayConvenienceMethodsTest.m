@@ -42,6 +42,7 @@
     NSArray *uniquedArray = [@[@1, @2, @2, @3] uniquedArray];
     
     XCTAssert(uniquedArray.count == 3, @"The uniqued array should only have 3 elements in it");
+    XCTAssertEqualObjects(uniquedArray, (@[@1, @2, @3]), @"Uniqued arrays should maintain order.");
 }
 
 - (void)testSorting
@@ -66,7 +67,4 @@
     }];
     
 }
-
-
-
 @end
