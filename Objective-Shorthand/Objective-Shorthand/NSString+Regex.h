@@ -28,4 +28,13 @@
  */
 - (NSRange) rangeOfFirstSubstringMatching:(NSString*)regex;
 
+/**
+ *  Returns an array of NSTextMatchingResults within the receiver
+ *
+ *  @param regex The regular expression pattern to match against.
+ *
+ *  @return An array of NSTextMatchingResults containing the matches from the receiver.
+ */
+- (NSArray*) matchesForRegex:(NSString*)regex;
+
 @end
