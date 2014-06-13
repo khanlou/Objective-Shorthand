@@ -29,6 +29,15 @@
     
     XCTAssertFalse(isNotEmail, @"isEmail should return NO for URLs");
     
+    isNotEmail = [@"" isEmail];
+    
+    XCTAssertFalse(isNotEmail, @"isNotEmail should return NO for blank strings");
+    
+    isNotEmail = [@"gibberish" isEmail];
+    
+    XCTAssertFalse(isNotEmail, @"isNotEmail should return NO for gibberish strings");
+
+    
 }
 
 - (void)testURLDetection
