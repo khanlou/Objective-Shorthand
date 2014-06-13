@@ -13,13 +13,19 @@
 - (BOOL) isEmail {
     NSDataDetector * dataDetector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
     NSTextCheckingResult * firstMatch = [dataDetector firstMatchInString:self options:0 range:NSMakeRange(0, self.length)];
-    return firstMatch.range.location == 0 && firstMatch.range.length == self.length && [firstMatch.URL.scheme isEqualToString:@"mailto"];
+    return (firstMatch
+            && firstMatch.range.location == 0
+            && firstMatch.range.length == self.length
+            && [firstMatch.URL.scheme isEqualToString:@"mailto"]);
 }
 
 - (BOOL) isURL {
     NSDataDetector *dataDetector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
     NSTextCheckingResult *firstMatch = [dataDetector firstMatchInString:self options:0 range:NSMakeRange(0, self.length)];
-    return firstMatch.range.location == 0 && firstMatch.range.length == self.length && ![firstMatch.URL.scheme isEqualToString:@"mailto"];
+    return (firstMatch
+            && firstMatch.range.location == 0
+            && firstMatch.range.length == self.length
+            && ![firstMatch.URL.scheme isEqualToString:@"mailto"]);
 }
 
 - (BOOL) isPhoneNumber {

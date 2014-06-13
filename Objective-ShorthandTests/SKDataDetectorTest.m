@@ -44,6 +44,15 @@
     BOOL isNotURL = [@"soroush@khanlou.com" isURL];
     
     XCTAssertFalse(isNotURL, @"isURL should return NO for email");
+    
+    isNotURL = [@"" isURL];
+    
+    XCTAssertFalse(isNotURL, @"isURL should return NO for blank strings");
+    
+    isNotURL = [@"gibberish" isURL];
+    
+    XCTAssertFalse(isNotURL, @"isURL should return NO for gibberish strings");
+
 }
 
 - (void)testPhoneNumberDetection
