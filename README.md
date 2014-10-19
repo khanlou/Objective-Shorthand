@@ -75,7 +75,7 @@ There's also `-sortedArray` which uses the default `compare:` selector to compar
 
 	- (NSArray*) sortedArray;
 
-Objective-Shorthand also includes `-reversedArray` and `-flattenedArray`.
+Objective-Shorthand also includes `-reversedArray`, `-flattenedArray`, and `-compactedArray`, which creates a new array with `NSNull` objects removed.
 
 ### Functional Collection Operators
 
