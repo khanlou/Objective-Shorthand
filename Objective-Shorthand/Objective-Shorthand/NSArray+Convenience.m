@@ -36,4 +36,10 @@
     return [[self reverseObjectEnumerator] allObjects];
 }
 
+- (NSArray *)compactedArray {
+    NSMutableArray *mutableArray = [self mutableCopy];
+    [mutableArray removeObjectIdenticalTo:[NSNull null]];
+    return mutableArray;
+}
+
 @end

@@ -65,6 +65,13 @@
     [originalArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         XCTAssert([obj isEqual:reversedArray[(arrayLength - 1) - idx]], @"each item in the reversed array must correspond to its counterpart in the original array");
     }];
-    
 }
+
+- (void)testCompactedArray {
+    NSArray *originalArray = @[[NSNull null], @3, @2, [NSNull null], @3];
+    NSArray *compactedArray = [originalArray compactedArray];
+    BOOL equal = [compactedArray isEqualToArray:@[@3, @2, @3]];
+    XCTAssert(equal, @"A compacted array should have all NSNull objects removed but otherwise be in the same order.");
+}
+
 @end

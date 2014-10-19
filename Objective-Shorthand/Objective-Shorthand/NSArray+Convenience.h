@@ -48,4 +48,13 @@
  */
 - (NSArray*) flattenedArray;
 
+/**
+ *  Returns an array with all NSNull objects removed.
+ *
+ *  The new array contains references to the receiving array’s elements, not copies of them.
+ *
+ *  @return A new array with all NSNull objects removed.
+ */
+- (NSArray *)compactedArray;
+
 @end
